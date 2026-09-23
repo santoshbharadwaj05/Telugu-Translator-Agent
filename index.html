@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English → Telugu Agent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <p class="eyebrow">Translation agent</p>
+        <h1>English → Telugu</h1>
+        <p class="subtitle">Type English. The agent replies in Telugu.</p>
+      </header>
+
+      <section class="card">
+        <label for="english">English</label>
+        <textarea
+          id="english"
+          rows="6"
+          placeholder="Hello, how are you?"
+        ></textarea>
+        <div class="actions">
+          <button id="translate" type="button">Translate</button>
+          <button id="clear" type="button" class="ghost">Clear</button>
+        </div>
+        <p id="status" class="status" role="status"></p>
+      </section>
+
+      <section class="card result">
+        <div class="result-head">
+          <label>Telugu</label>
+          <button id="copy" type="button" class="ghost" disabled>Copy</button>
+        </div>
+        <p id="telugu" class="telugu" lang="te">అనువాదం ఇక్కడ కనిపిస్తుంది.</p>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
